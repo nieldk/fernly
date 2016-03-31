@@ -1,6 +1,15 @@
 include mkenv.mk
 include magic.mk
 
+# [isogashii]
+# These two lines demonstrate how to set Make variables in this file
+# instead of including them as part of every "make" command.
+#
+# Make will put binaries in my build/ subdirectory, and my executable
+# path includes arm-none-eabi-gcc, arm-none-eabi-as, etc, programs
+BUILD = build
+CROSS_COMPILE=arm-none-eabi-
+
 CFLAGS = -march=armv5te -mfloat-abi=soft -Wall \
 	 -Os -ggdb -Iinclude -marm -fno-stack-protector
 AFLAGS = 
