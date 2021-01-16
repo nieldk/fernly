@@ -15,7 +15,7 @@
 #include "sha1.h"
 
 #define BAUDRATE B115200
-#define STAGE_2_WRITE_ALL_AT_ONCE 1 /* Write stage 2 in one write() */
+#define STAGE_2_WRITE_ALL_AT_ONCE 0 /* Write stage 2 in one write() */
 #define STAGE_2_WRITE_SIZE 1
 #define STAGE_3_WRITE_ALL_AT_ONCE 1 /* Write stage 3 in one write() */
 #define STAGE_3_WRITE_SIZE 1
